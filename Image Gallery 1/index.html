@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Image Gallery</title>
+</head>
+
+<body>
+    <div class="image" id="boxImg">
+        <img src="img/img1.jpg" alt="" id="displayImg">
+        <span onclick="closeImg()">X</span>
+    </div>
+    <div class="col">
+        <img src="img/img1.jpg" onclick="openImg(this.src)">
+        <img src="img/img2.jpg" onclick="openImg(this.src)">
+        <img src="img/img3.jpg" onclick="openImg(this.src)">
+    </div>
+    <div class="col">
+        <img src="img/img4.jpg" onclick="openImg(this.src)">
+        <img src="img/img5.jpeg" onclick="openImg(this.src)">
+        <img src="img/img6.jpeg" onclick="openImg(this.src)">
+    </div>
+    <div class="col">
+        <img src="img/img7.jpeg" onclick="openImg(this.src)">
+        <img src="img/img8.jpeg" onclick="openImg(this.src)">
+        <img src="img/img9.jpeg" onclick="openImg(this.src)">
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
