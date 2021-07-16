@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #efefef;
+}
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
+.container h1{
+    font-size: 30px;
+    margin: 15px 0;
+    text-align: center;
+}
+.container .images{
+    padding: 5px 10px;
+}
+.container .images .imgs{
+    float: left;
+    position: relative;
+    width: 23%;
+    margin: 10px 1%;
+}
+.container .images .imgs.hide{
+    display: none;
+}
+.container .images .imgs.show{
+    display: block;
+    animation: show .5s ease;
+}
+@keyframes show{
+    0%{
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+img{
+    width: 100%;
+    display: block;
+}
+.container .images .caption{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+.change-page{
+    width: 100%;
+    float: left;
+    padding: 15px;
+    text-align: center;
+}
+.change-page div{
+    display: inline-block;
+    margin: 0 10px;
+}
+.change-page .pages,
+.change-page .page{
+    color: #828282;
+}
+.change-page .prev,
+.change-page .next{
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-weight: 800;
+}
+.change-page .prev:hover,
+.change-page .next:hover{
+    background: #222222;
+    color: #fff;
+}
+.change-page .prev.disabled,
+.change-page .next.disabled{
+    border-color: #828282;
+    color: #828282;
+    pointer-events:none;
+}
