@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 60%;
+    margin: 30px auto;
+}
+.image img{
+    width: 100%;
+}
+.imgs{
+    display: flex;
+    justify-content: space-between;
+}
+.imgs img{
+    height: 100px;
+    cursor: pointer;
+    margin: 10px 0;
+    display: block;
+    opacity: 1;
+}
+.imgs img:hover{
+    opacity: 0.8;
+}
